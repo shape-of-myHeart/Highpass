@@ -16,6 +16,17 @@ class NODE_1_1 extends React.Component {
     render() { return (<section style={{ backgroundColor: this.state.backgroundColor }}>NODE_1_1</section>) }
 }
 ...
+class NODE_2 extends React.Component {
+    render() {
+        return (
+            <section>
+                <div>NODE_2</div>
+                <NODE_2_1 color="red"/>
+                <NODE_2_1 color="white"/>
+            </section>
+        )
+    }
+}
 class NODE_2_1 extends React.Component {
     render() {
       return (
