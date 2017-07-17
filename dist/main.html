@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Highpass :: For Communications of React Components</title>
+    <meta charset='utf-8'>
+    <style>
+        #react-container {
+            padding: 50px 0;
+        }
+
+        .ui {
+            position: relative;
+            padding: 10px;
+            border: 1px solid #5d5d5d;
+        }
+
+        .ui::before {
+            position: absolute;
+            top: -25px;
+            left:0;
+            font-weight: bold;
+            content: 'UI CONTAINER';
+        }
+
+        .ui::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .ui>* {
+            float: left;
+            margin: 0 5px;
+        }
+
+        .ui>*>div {
+            background: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="react-container"></section>
+    <script src="./bundle.js"></script>
+</body>
+
+</html>
