@@ -6,7 +6,6 @@ export default {
         if (!Array.isArray(listeners[name])) listeners[name] = [];
 
         listeners[name].push(listener);
-        console.log(listeners)
     },
     emit: (name, parameters) => {
         if (!Array.isArray(listeners[name])) return;
